@@ -1,0 +1,13 @@
+{
+    "config" : {
+        "background": "#9b2226",
+        "colorText": "#001219",
+
+        "imagen": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=trackartwork",
+        "api": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=playbackinfo",         
+        "stream": "https://live.mixzoneapp.cl/stream",          
+        "lottie" : "https://assets1.lottiefiles.com/packages/lf20_brecptzv.json",
+        "borde" : "rgb(181, 52, 113)",
+        "nombre": "Radio Dvj Mix Zone"
+    }
+}

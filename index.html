@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="./assets/css/style.css">        
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <title>Meta</title>
+    </head>
+    <body id="body">
+        <section class="container">
+            <div class="cabecera">
+                <img src="./assets/img/logo.png" width="50">
+                <span id="nombreRadio"></span>
+            </div>
+            
+            <div class="subcontenedor">
+                <div class="img">
+                    <i id="spinner" class="fa-solid fa-fan fa-spin fa-spin-reverse"></i>
+                    <img src="" id="album" width="170" class="animate__animated d-none" onload="carga();">                    
+                </div>
+                <div id="Tema"></div>
+                <div id="animacion"></div>  
+              
+            <!-- REPRODUCTOR SIMPLE (solo esto) -->
+            <audio id="playerRadio" src="https://live.mixzoneapp.cl/stream" controls preload="none"></audio>
+            <!-- FIN REPRODUCTOR SIMPLE -->
+        </section>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>        
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
