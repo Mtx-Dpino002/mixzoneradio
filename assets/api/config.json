@@ -6,8 +6,9 @@
         "imagen": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=trackartwork",
         "api": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=playbackinfo",         
         "stream": "https://live.mixzoneapp.cl/stream",          
-        "lottie" : "https://assets1.lottiefiles.com/packages/lf20_brecptzv.json",
-        "borde" : "rgb(181, 52, 113)",
+        "lottie" : "https://lottie.host/3eb9128b-df6d-49c8-aebd-8e907a522563/NbNTEzLM2S.json",
+        
+        "borde" : "rgb(52, 52, 181)",
         "nombre": "Radio Dvj Mix Zone"
     }
 }
