@@ -13,7 +13,7 @@ $.getJSON('./assets/api/config.json', (query) => {
 })
 
 function config(info, background, color, lottie, borde, nombre, api, imagen) {
-    $('#animacion').html(`<dotlottie-wc src="${lottie}" style="width: 120%; height: 300px; margin-top: -60px;" autoplay loop></dotlottie-wc>`)
+    $('#animacion').html(`<dotlottie-wc src="${lottie}" style="width: 120%; height: 300px; margin-top: -60px; margin-left: -10%;" autoplay loop></dotlottie-wc>`)
     $('#body').css('background-color', background)
     $('#body').css('color', color)
     $('#album').css('border', `10px solid ${borde}`)
@@ -62,4 +62,5 @@ function carga() {
     $('#album').addClass('animate__zoomIn');
     $('#spinner').css('display', 'none');
 }
+
 
