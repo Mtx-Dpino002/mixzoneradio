@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@type": "RadioStation",
+  "name": "Radio Dvj Mix Zone",
+  "description": "Radio en vivo desde Mix Zone",
+  "url": "https://live.mixzoneapp.cl/stream",
+  "broadcastServiceTier": "free",
+  "version": "1.0.0",
+  "lastUpdated": "2025-11-24T00:00:00Z",
+  "api": {
+    "version": "1.0",
+    "endpoints": {
+      "playbackInfo": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=playbackinfo",
+      "trackArtwork": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=trackartwork",
+      "stream": "https://live.mixzoneapp.cl/stream"
+    }
+  },
+  "streaming": {
+    "url": "https://live.mixzoneapp.cl/stream",
+    "format": "audio/mpeg",
+    "bitrate": "128kbps",
+    "protocol": "HTTP",
+    "isLive": true
+  },
+  "branding": {
+    "primaryColor": "#9b2226",
+    "textColor": "#001219",
+    "accentColor": "rgb(52, 52, 181)",
+    "logo": "./assets/img/logo.png",
+    "animation": {
+      "type": "lottie",
+      "url": "https://lottie.host/3eb9128b-df6d-49c8-aebd-8e907a522563/NbNTEzLM2S.json"
+    }
+  },
+  "nowPlaying": {
+    "updateInterval": 5000,
+    "source": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=playbackinfo",
+    "format": "XML"
+  },
+  "flutter": {
+    "compatibility": "2.0+",
+    "requiredPackages": [
+      "http",
+      "audioplayers",
+      "xml",
+      "lottie"
+    ],
+    "example": {
+      "fetchConfig": "GET https://tu-dominio.com/assets/api/radio-api.json",
+      "playStream": "AudioPlayer().play(streaming.url)"
+    }
+  }
+}
