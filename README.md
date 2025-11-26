@@ -1,5 +1,4 @@
 Resumen del Proyecto Radio Mixzone
-Esto es lo que veo en tu código:
 
 Estructura General
 Es un reproductor de radio web minimalista y funcional que consume datos desde una API de RadioBOSS.
