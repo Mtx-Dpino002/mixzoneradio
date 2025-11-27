@@ -10,15 +10,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="./assets/css/style.css">        
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>        
-        <title>Radio MixZone</title>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
+        <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
+        <title>Radio Dvj Mix Zone</title>
     </head>
     <body id="body">
+        <!-- Fondo dinámico con carátula difuminada -->
+        <div id="fondoDinamico" class="fondo-dinamico"></div>
+        
         <section class="container">
             <div class="cabecera">
                 <img src="./assets/img/logo.png" width="50">
                 <span id="nombreRadio"></span>
+                <span id="liveBadge" class="live-badge d-none"></span>
+                <span id="contadorOyentes" class="contador-oyentes d-none">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span id="numOyentes">0</span>
+                </span>
             </div>
             
             <div class="subcontenedor">
@@ -27,15 +35,72 @@
                     <img src="" id="album" width="170" class="animate__animated d-none" onload="carga();">                    
                 </div>
                 <div id="Tema"></div>
+                <div id="waveVisualizer" class="wave-visualizer d-none">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
                 <div id="animacion"></div>  
               
             <!-- REPRODUCTOR SIMPLE (solo esto) -->
             <audio id="playerRadio" src="https://live.mixzoneapp.cl/stream" controls preload="none"></audio>
             <!-- FIN REPRODUCTOR SIMPLE -->
+            
+            <!-- REDES SOCIALES -->
+            <div id="redesSociales" class="redes-sociales"></div>
+            
+            <!-- HISTORIAL (fixed en desktop, después de redes sociales en mobile) -->
+            <button id="toggleHistorial" class="btn-historial d-none" type="button">Últimos temas</button>
+            <div id="historial" class="historial d-none"></div>
+            </div>
         </section>
 
         <script src="https://code.jquery.com/jquery-2.2.4.js"></script>        
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
-

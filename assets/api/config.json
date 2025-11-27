@@ -1,14 +1,97 @@
 {
     "config" : {
+        "fondoCaratula": true,
         "background": "#9b2226",
-        "colorText": "#001219",
-
+        "colorText": "#fb8500",
+        "liveIndicator": {
+            "activo": true,
+            "texto": "EN VIVO",
+            "colorTexto": "#ffffff",
+            "colorFondo": "#e63946",
+            "pulso": true
+        },
+        "historial": {
+            "activo": true,
+            "limite": 8
+        },
+        "contadorOyentes": {
+            "activo": true,
+            "api": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=playbackinfo",
+            "intervalo": 30000,
+            "colorTexto": "#ffffff",
+            "colorFondo": "#000000",
+            "selectorJson": "",
+            "selectorXmlNodo": "",
+            "selectorXmlAtributo": "listeners"
+        },
+        "visualizer": {
+            "activo": true,
+            "barras": 48,
+            "duracionMs": 1500,
+            "patrones": {
+                "onda": true,
+                "secuencial": false,
+                "pulso": false,
+                "alternado": false,
+                "espejo": false,
+                "aleatorio": false,
+                "cascada": false,
+                "doble": false
+            }
+        },
         "imagen": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=trackartwork",
         "api": "https://api.mixzoneapp.cl/?pass=sSCDEkX9rB&action=playbackinfo",         
         "stream": "https://live.mixzoneapp.cl/stream",          
         "lottie" : "https://lottie.host/3eb9128b-df6d-49c8-aebd-8e907a522563/NbNTEzLM2S.json",
         
         "borde" : "rgb(52, 52, 181)",
-        "nombre": "Radio Dvj Mix Zone"
+        "nombre": "Radio Dvj Mix Zone",
+        
+        "redesSociales": [
+            {
+                "activo": true,
+                "tipo": "icono",
+                "icono": "fa-brands fa-facebook",
+                "enlace": "https://www.facebook.com/profile.php?id=61582440383893",
+                "color": "#1877f2"
+            },
+            {
+                "activo": true,
+                "tipo": "imagen",
+                "imagen": "./assets/img/instagram.png",
+                "enlace": "https://instagram.com/dvjmixzone"
+            },
+            {
+                "activo": false,
+                "tipo": "icono",
+                "icono": "fa-brands fa-twitter",
+                "enlace": "https://twitter.com/radiomixzone",
+                "color": "#1da1f2"
+            },
+            {
+                "activo": false,
+                "tipo": "imagen",
+                "imagen": "./assets/img/youtube.png",
+                "enlace": "https://youtube.com/radiomixzone"
+            },
+            {
+                "activo": false,
+                "tipo": "icono",
+                "icono": "fa-brands fa-tiktok",
+                "enlace": "https://tiktok.com/@radiomixzone",
+                "color": "#000000"
+            },
+            {
+                "activo": true,
+                "tipo": "icono",
+                "icono": "fa-brands fa-whatsapp",
+                "enlace": "https://wa.me/56979724945",
+                "color": "#25d366"
+            }
+        ],
+        "preferencias": {
+            "altoContraste": true,
+            "focusVisible": true
+        }
     }
 }
